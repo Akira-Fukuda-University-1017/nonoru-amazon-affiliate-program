@@ -1,0 +1,189 @@
+
+<style>
+.section { margin: 0 0 2rem; }
+.section-title { font-size: 15px; font-weight: 500; color: var(--color-text-primary); margin: 0 0 12px; display: flex; align-items: center; gap: 8px; }
+.section-title i { font-size: 18px; color: var(--color-text-secondary); }
+.flow-row { display: flex; align-items: center; gap: 0; margin: 0 0 8px; flex-wrap: nowrap; }
+.flow-box { background: var(--color-background-secondary); border: 0.5px solid var(--color-border-tertiary); border-radius: var(--border-radius-md); padding: 10px 14px; font-size: 13px; color: var(--color-text-primary); flex: 1; min-width: 0; text-align: center; line-height: 1.4; }
+.flow-box strong { display: block; font-weight: 500; font-size: 13px; }
+.flow-box span { font-size: 11px; color: var(--color-text-secondary); }
+.flow-arrow { font-size: 18px; color: var(--color-text-tertiary); flex-shrink: 0; margin: 0 4px; }
+.highlight { border-color: #3B8BD4 !important; background: #E6F1FB !important; }
+@media (prefers-color-scheme: dark) { .highlight { background: #0C447C !important; border-color: #378ADD !important; } }
+.condition-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+.condition-card { border: 0.5px solid var(--color-border-tertiary); border-radius: var(--border-radius-md); padding: 10px 12px; font-size: 13px; }
+.condition-card .num { font-size: 22px; font-weight: 500; color: #378ADD; line-height: 1; margin-bottom: 4px; }
+.condition-card .label { font-weight: 500; font-size: 13px; color: var(--color-text-primary); }
+.condition-card .desc { font-size: 12px; color: var(--color-text-secondary); margin-top: 2px; }
+.rate-bar-wrap { margin: 6px 0; }
+.rate-row { display: flex; align-items: center; gap: 8px; margin: 5px 0; }
+.rate-label { font-size: 12px; color: var(--color-text-secondary); width: 140px; flex-shrink: 0; text-align: right; }
+.rate-bar-bg { flex: 1; background: var(--color-background-secondary); border-radius: 4px; height: 20px; overflow: hidden; }
+.rate-bar { height: 100%; border-radius: 4px; display: flex; align-items: center; padding-left: 6px; font-size: 11px; font-weight: 500; transition: width 0.6s; }
+.rate-pct { font-size: 12px; font-weight: 500; color: var(--color-text-primary); width: 36px; flex-shrink: 0; }
+.tip-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+.tip-card { border: 0.5px solid var(--color-border-tertiary); border-radius: var(--border-radius-md); padding: 10px 12px; }
+.tip-card .tip-icon { font-size: 20px; color: var(--color-text-secondary); margin-bottom: 6px; }
+.tip-card .tip-title { font-size: 13px; font-weight: 500; color: var(--color-text-primary); margin-bottom: 4px; }
+.tip-card .tip-desc { font-size: 12px; color: var(--color-text-secondary); line-height: 1.5; }
+.warn-box { border: 0.5px solid var(--color-border-warning); background: var(--color-background-warning); border-radius: var(--border-radius-md); padding: 10px 14px; font-size: 13px; color: var(--color-text-warning); display: flex; gap: 8px; align-items: flex-start; }
+.warn-box i { font-size: 18px; flex-shrink: 0; margin-top: 1px; }
+.moshimo-box { border: 0.5px solid var(--color-border-success); background: var(--color-background-success); border-radius: var(--border-radius-md); padding: 10px 14px; font-size: 13px; color: var(--color-text-success); display: flex; gap: 8px; align-items: flex-start; }
+.moshimo-box i { font-size: 18px; flex-shrink: 0; margin-top: 1px; }
+hr.divider { border: none; border-top: 0.5px solid var(--color-border-tertiary); margin: 1.5rem 0; }
+</style>
+
+<h2 class="sr-only">Amazonアソシエイト完全ガイド</h2>
+
+<div class="section">
+  <div class="section-title"><i class="ti ti-route" aria-hidden="true"></i>全体の流れ</div>
+  <div class="flow-row">
+    <div class="flow-box"><strong>サイト・SNS</strong><span>ブログ・YouTube等</span></div>
+    <div class="flow-arrow">→</div>
+    <div class="flow-box highlight"><strong>アソシエイト登録</strong><span>申請〜仮審査</span></div>
+    <div class="flow-arrow">→</div>
+    <div class="flow-box"><strong>リンク設置</strong><span>商品リンクを貼る</span></div>
+    <div class="flow-arrow">→</div>
+    <div class="flow-box"><strong>3件販売</strong><span>180日以内に</span></div>
+    <div class="flow-arrow">→</div>
+    <div class="flow-box highlight"><strong>本審査通過</strong><span>報酬受取スタート</span></div>
+  </div>
+  <div class="warn-box" style="margin-top:10px">
+    <i class="ti ti-alert-triangle" aria-hidden="true"></i>
+    <div>登録後180日以内に3件の適格販売がなければ、アカウントは自動的に無効になります。まずは早期の販売実績を作ることが最優先です。</div>
+  </div>
+</div>
+
+<hr class="divider">
+
+<div class="section">
+  <div class="section-title"><i class="ti ti-checklist" aria-hidden="true"></i>審査を通過するための4条件</div>
+  <div class="condition-grid">
+    <div class="condition-card">
+      <div class="num">180<span style="font-size:13px">日</span></div>
+      <div class="label">3件の適格販売</div>
+      <div class="desc">登録後180日以内に自分のリンクから3件売れること</div>
+    </div>
+    <div class="condition-card">
+      <div class="num">10<span style="font-size:13px">記事</span></div>
+      <div class="label">コンテンツ量</div>
+      <div class="desc">10記事以上のコンテンツが公開されていること</div>
+    </div>
+    <div class="condition-card">
+      <div class="num">60<span style="font-size:13px">日</span></div>
+      <div class="label">更新の新鮮さ</div>
+      <div class="desc">直近60日以内にコンテンツが更新されていること</div>
+    </div>
+    <div class="condition-card">
+      <div class="num"><i class="ti ti-user-check" style="font-size:22px; color:#378ADD" aria-hidden="true"></i></div>
+      <div class="label">本人運営</div>
+      <div class="desc">サイトを自分自身で運営していること（代行不可）</div>
+    </div>
+  </div>
+</div>
+
+<hr class="divider">
+
+<div class="section">
+  <div class="section-title"><i class="ti ti-chart-bar" aria-hidden="true"></i>カテゴリ別 紹介料率（2025年）</div>
+  <div class="rate-bar-wrap">
+    <div class="rate-row">
+      <div class="rate-label">ファッション小物</div>
+      <div class="rate-bar-bg"><div class="rate-bar" style="width:100%; background:#3B8BD4; color:#E6F1FB">8%</div></div>
+      <div class="rate-pct">8%</div>
+    </div>
+    <div class="rate-row">
+      <div class="rate-label">Amazonデバイス</div>
+      <div class="rate-bar-bg"><div class="rate-bar" style="width:100%; background:#3B8BD4; color:#E6F1FB">8%</div></div>
+      <div class="rate-pct">8%</div>
+    </div>
+    <div class="rate-row">
+      <div class="rate-label">美容・コスメ</div>
+      <div class="rate-bar-bg"><div class="rate-bar" style="width:62.5%; background:#1D9E75; color:#E1F5EE">5%</div></div>
+      <div class="rate-pct">5%</div>
+    </div>
+    <div class="rate-row">
+      <div class="rate-label">ホーム・キッチン</div>
+      <div class="rate-bar-bg"><div class="rate-bar" style="width:50%; background:#1D9E75; color:#E1F5EE">4%</div></div>
+      <div class="rate-pct">4%</div>
+    </div>
+    <div class="rate-row">
+      <div class="rate-label">おもちゃ・ゲーム</div>
+      <div class="rate-bar-bg"><div class="rate-bar" style="width:37.5%; background:#BA7517; color:#FAEEDA">3%</div></div>
+      <div class="rate-pct">3%</div>
+    </div>
+    <div class="rate-row">
+      <div class="rate-label">本・雑誌</div>
+      <div class="rate-bar-bg"><div class="rate-bar" style="width:37.5%; background:#BA7517; color:#FAEEDA">3%</div></div>
+      <div class="rate-pct">3%</div>
+    </div>
+    <div class="rate-row">
+      <div class="rate-label">家電・PC・カメラ</div>
+      <div class="rate-bar-bg"><div class="rate-bar" style="width:25%; background:#888780; color:#F1EFE8">2%</div></div>
+      <div class="rate-pct">2%</div>
+    </div>
+    <div class="rate-row">
+      <div class="rate-label">食品・日用品</div>
+      <div class="rate-bar-bg"><div class="rate-bar" style="width:25%; background:#888780; color:#F1EFE8">2%</div></div>
+      <div class="rate-pct">2%</div>
+    </div>
+    <div class="rate-row">
+      <div class="rate-label">PCソフト・ゲーム</div>
+      <div class="rate-bar-bg"><div class="rate-bar" style="width:12.5%; background:#D3D1C7; color:#5F5E5A">1%</div></div>
+      <div class="rate-pct">1%</div>
+    </div>
+  </div>
+  <div class="moshimo-box" style="margin-top:10px">
+    <i class="ti ti-info-circle" aria-hidden="true"></i>
+    <div>2024年8月から<strong>報酬上限（旧：1,000円/商品）が撤廃</strong>されました。高額商品でも報酬率どおりに稼げるようになっています。</div>
+  </div>
+</div>
+
+<hr class="divider">
+
+<div class="section">
+  <div class="section-title"><i class="ti ti-bulb" aria-hidden="true"></i>稼ぐための5つのポイント</div>
+  <div class="tip-grid">
+    <div class="tip-card">
+      <div class="tip-icon"><i class="ti ti-target" aria-hidden="true"></i></div>
+      <div class="tip-title">高報酬ジャンルを狙う</div>
+      <div class="tip-desc">ファッション小物・Amazonデバイス（8%）やコスメ（5%）など、報酬率の高いジャンルに集中するのが最短ルート</div>
+    </div>
+    <div class="tip-card">
+      <div class="tip-icon"><i class="ti ti-search" aria-hidden="true"></i></div>
+      <div class="tip-title">SEOを意識した記事作り</div>
+      <div class="tip-desc">「〇〇 おすすめ」「〇〇 レビュー」など購買意欲の高いキーワードで記事を書くと成約率が上がる</div>
+    </div>
+    <div class="tip-card">
+      <div class="tip-icon"><i class="ti ti-clock" aria-hidden="true"></i></div>
+      <div class="tip-title">Cookie 24時間の活用</div>
+      <div class="tip-desc">リンク経由で訪問後24時間以内にAmazonで何かを買えば、リンクした商品以外でも報酬が発生する</div>
+    </div>
+    <div class="tip-card">
+      <div class="tip-icon"><i class="ti ti-gift" aria-hidden="true"></i></div>
+      <div class="tip-title">特別プログラムも活用</div>
+      <div class="tip-desc">Amazonプライム無料体験（定額報酬）やAudible紹介など、物販以外にも高単価プログラムがある</div>
+    </div>
+  </div>
+  <div class="tip-card" style="margin-top:8px">
+    <div style="display:flex; gap:10px; align-items:flex-start">
+      <i class="ti ti-shield-check" style="font-size:20px; color:var(--color-text-secondary); flex-shrink:0; margin-top:1px" aria-hidden="true"></i>
+      <div>
+        <div class="tip-title">禁止事項を必ず守る</div>
+        <div class="tip-desc">自己購入・家族や友人による代理購入は厳禁です。発覚した場合、アカウント停止・報酬没収のリスクがあります。また、Amazonのリンクであることを明示（「Amazonアソシエイトのリンクを使用しています」など）する表示義務があります。</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<hr class="divider">
+
+<div class="section" style="margin-bottom:0">
+  <div class="section-title"><i class="ti ti-coin" aria-hidden="true"></i>報酬の受取方法</div>
+  <div class="flow-row">
+    <div class="flow-box"><strong><i class="ti ti-building-bank" aria-hidden="true"></i> 銀行振込</strong><span>現金で受取</span></div>
+    <div class="flow-arrow" style="font-size:14px; margin:0 12px">または</div>
+    <div class="flow-box"><strong><i class="ti ti-credit-card" aria-hidden="true"></i> Amazonギフト券</strong><span>ギフト券で受取</span></div>
+  </div>
+  <div style="font-size:12px; color:var(--color-text-secondary); margin-top:8px">報酬は月ごとに集計され、翌々月末頃に支払われます（一定金額以上に達した場合）。</div>
+</div>
